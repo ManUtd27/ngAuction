@@ -11,10 +11,12 @@ import {NavbarModule} from './navbar/navbar.module';
 import {ProductsModule} from './products/products.module';
 import {StarsModule} from './stars/stars.module';
 import {SearchModule} from './search/search.module';
+import { PageNotFoundComponent } from './page-not-found.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    PageNotFoundComponent
   ],
   imports: [
     BrowserModule,
