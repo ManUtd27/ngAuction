@@ -4,6 +4,9 @@ import { SearchComponent } from './search.component';
 
 @NgModule({
   declarations: [SearchComponent],
+  exports: [
+    SearchComponent
+  ],
   imports: [
     CommonModule
   ]
