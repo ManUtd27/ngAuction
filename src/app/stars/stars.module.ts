@@ -4,6 +4,9 @@ import { StarsComponent } from './stars.component';
 
 @NgModule({
   declarations: [StarsComponent],
+  exports: [
+    StarsComponent
+  ],
   imports: [
     CommonModule
   ]
