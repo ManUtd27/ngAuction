@@ -1,3 +1,6 @@
-nav i {
+.fill {
+  flex: 1;
+}
+mat-toolbar a {
   color: white;
 }
