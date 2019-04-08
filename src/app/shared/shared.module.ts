@@ -5,10 +5,6 @@ import {AuctionMaterialModule} from '../auction-material/auction-material.module
 
 @NgModule({
   declarations: [],
-  imports: [
-    CommonModule,
-    AuctionMaterialModule
-  ],
   exports: [
     CommonModule,
     FormsModule,

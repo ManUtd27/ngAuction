@@ -1,6 +1,6 @@
 import { NgModule } from '@angular/core';
-import { CommonModule } from '@angular/common';
 import { StarsComponent } from './stars.component';
+import {SharedModule} from '../shared/shared.module';
 
 @NgModule({
   declarations: [StarsComponent],
@@ -8,7 +8,7 @@ import { StarsComponent } from './stars.component';
     StarsComponent
   ],
   imports: [
-    CommonModule
+    SharedModule
   ]
 })
 export class StarsModule { }

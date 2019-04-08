@@ -3,7 +3,6 @@ import { NgModule } from '@angular/core';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import {SharedModule} from './shared/shared.module';
 import {CarouselModule} from './carousel/carousel.module';
 import {FooterModule} from './footer/footer.module';
 import {HomeModule} from './home/home.module';
@@ -20,7 +19,6 @@ import { PageNotFoundComponent } from './page-not-found.component';
   ],
   imports: [
     BrowserModule,
-    SharedModule,
     CarouselModule,
     FooterModule,
     HomeModule,
@@ -30,7 +28,6 @@ import { PageNotFoundComponent } from './page-not-found.component';
     StarsModule,
     AppRoutingModule
   ],
-  providers: [],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

@@ -1,5 +1,4 @@
 import { NgModule } from '@angular/core';
-import { CommonModule } from '@angular/common';
 import { ProductItemComponent } from './product-item/product-item.component';
 import { ProductDetailComponent } from './product-detail/product-detail.component';
 import {ProductsRoutingModule} from './products-routing.module';
@@ -12,7 +11,6 @@ import {SharedModule} from '../shared/shared.module';
     ProductItemComponent
   ],
   imports: [
-    CommonModule,
     ProductsRoutingModule,
     StarsModule,
     SharedModule
