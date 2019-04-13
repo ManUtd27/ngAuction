@@ -1,15 +1,30 @@
-<nga-navbar></nga-navbar>
-<div class="container">
-  <div class="row">
-    <div class="col-md-3">
-      <nga-search></nga-search>
-    </div>
+<mat-toolbar class="toolbar">
+  <button class="toolbar__icon-button"
+          mat-icon-button>
+    <mat-icon>menu</mat-icon>
+  </button>
 
-    <div class="col-md-9">
-      <router-outlet></router-outlet>
-    </div>
+  <div class="toolbar__logo-title-group"
+       fxLayout
+       fxLayoutAlign="center center">
+    <a routerLink="/"
+       fxLayout>
+      <img class="toolbar__logo"
+           src="/assets/logo.svg"
+           alt="NgAuction Logo">
+    </a>
+    <a class="toolbar__title"
+       routerLink="/">NgAuction</a>
   </div>
-</div>
 
-<nga-footer></nga-footer>
+  <div fxFlex></div>
 
+  <button mat-icon-button
+          class="toolbar__icon-button
+                   toolbar__shopping-cart-button">
+    <mat-icon>shopping_cart</mat-icon>
+  </button>
+
+</mat-toolbar>
+
+<router-outlet></router-outlet>

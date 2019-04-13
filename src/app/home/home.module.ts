@@ -1,15 +1,21 @@
 import { NgModule } from '@angular/core';
+import { CommonModule } from '@angular/common';
+import { RouterModule } from '@angular/router';
+import { FlexLayoutModule } from '@angular/flex-layout';
+import { MatGridListModule } from '@angular/material/grid-list';
 import { HomeComponent } from './home.component';
-import {CarouselModule} from '../carousel/carousel.module';
-import {ProductsModule} from '../products/products.module';
-import {SharedModule} from '../shared/shared.module';
 
 @NgModule({
-  declarations: [HomeComponent],
   imports: [
-    SharedModule,
-    CarouselModule,
-    ProductsModule
+    CommonModule,
+    RouterModule.forChild([
+      { path: '', component: HomeComponent }
+    ]),
+    FlexLayoutModule,
+    MatGridListModule
+  ],
+  declarations: [
+    HomeComponent
   ]
 })
-export class HomeModule { }
+export class HomeModule {}

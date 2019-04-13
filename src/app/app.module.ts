@@ -3,31 +3,24 @@ import { NgModule } from '@angular/core';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import {CarouselModule} from './carousel/carousel.module';
-import {FooterModule} from './footer/footer.module';
-import {HomeModule} from './home/home.module';
-import {NavbarModule} from './navbar/navbar.module';
-import {ProductsModule} from './products/products.module';
-import {StarsModule} from './stars/stars.module';
-import {SearchModule} from './search/search.module';
-import { PageNotFoundComponent } from './page-not-found.component';
+import {MatButtonModule, MatIconModule, MatToolbarModule} from '@angular/material';
+import {FlexLayoutModule} from '@angular/flex-layout';
+import {HttpClientModule} from '@angular/common/http';
 
 @NgModule({
   declarations: [
-    AppComponent,
-    PageNotFoundComponent
+    AppComponent
   ],
   imports: [
     BrowserModule,
-    CarouselModule,
-    FooterModule,
-    HomeModule,
-    NavbarModule,
-    ProductsModule,
-    SearchModule,
-    StarsModule,
+    MatButtonModule,
+    MatIconModule,
+    MatToolbarModule,
+    FlexLayoutModule,
+    HttpClientModule,
     AppRoutingModule
   ],
+  providers: [],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
