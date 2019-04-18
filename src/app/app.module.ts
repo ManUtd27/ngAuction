@@ -1,26 +1,43 @@
-import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
+import { HttpClientModule } from '@angular/common/http';
+import { BrowserModule } from '@angular/platform-browser';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { RouterModule } from '@angular/router';
+import { FlexLayoutModule } from '@angular/flex-layout';
 
-import { AppRoutingModule } from './app-routing.module';
+import { MatButtonModule } from '@angular/material/button';
+import { MatIconModule } from '@angular/material/icon';
+import { MatSidenavModule } from '@angular/material/sidenav';
+import { MatToolbarModule } from '@angular/material/toolbar';
+
+import { SHARED_SERVICES } from './shared/services';
+import { SearchFormModule } from './shared/components';
 import { AppComponent } from './app.component';
-import {MatButtonModule, MatIconModule, MatToolbarModule} from '@angular/material';
-import {FlexLayoutModule} from '@angular/flex-layout';
-import {HttpClientModule} from '@angular/common/http';
+import { routes } from './app.routing';
 
 @NgModule({
+  imports: [
+    BrowserModule,
+    BrowserAnimationsModule,
+    HttpClientModule,
+    FlexLayoutModule,
+    RouterModule.forRoot(routes),
+
+    MatButtonModule,
+    MatIconModule,
+    MatSidenavModule,
+    MatToolbarModule,
+
+    SearchFormModule
+  ],
   declarations: [
     AppComponent
   ],
-  imports: [
-    BrowserModule,
-    MatButtonModule,
-    MatIconModule,
-    MatToolbarModule,
-    FlexLayoutModule,
-    HttpClientModule,
-    AppRoutingModule
+  bootstrap: [
+    AppComponent
   ],
-  providers: [],
-  bootstrap: [AppComponent]
+  providers: [
+    ...SHARED_SERVICES
+  ]
 })
-export class AppModule { }
+export class AppModule {}

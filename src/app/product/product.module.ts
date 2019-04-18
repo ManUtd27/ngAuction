@@ -1,22 +1,28 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import {FlexLayoutModule} from '@angular/flex-layout';
+import { RouterModule } from '@angular/router';
+import { FlexLayoutModule } from '@angular/flex-layout';
+import { MatButtonModule } from '@angular/material/button';
+import { MatGridListModule } from '@angular/material/grid-list';
+
 import { ProductComponent } from './product.component';
-import { ProductDetailComponent } from './product-detail/product-detail.component';
-import { ProductSuggestionComponent } from './product-suggestion/product-suggestion.component';
-import {RouterModule} from '@angular/router';
-import {MatButtonModule, MatGridListModule} from '@angular/material';
+import { ProductDetailComponent } from './product-detail';
+import { ProductSuggestionComponent } from './product-suggestion';
 
 @NgModule({
-  declarations: [ProductComponent, ProductDetailComponent, ProductSuggestionComponent],
   imports: [
     CommonModule,
     FlexLayoutModule,
     RouterModule.forChild([
-      {path: '', component: ProductComponent}
+      { path: '', component: ProductComponent }
     ]),
     MatButtonModule,
     MatGridListModule
+  ],
+  declarations: [
+    ProductComponent,
+    ProductDetailComponent,
+    ProductSuggestionComponent
   ]
 })
-export class ProductModule { }
+export class ProductModule {}
