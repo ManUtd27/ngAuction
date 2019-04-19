@@ -8,16 +8,18 @@ import { MatGridListModule } from '@angular/material/grid-list';
 import { ProductComponent } from './product.component';
 import { ProductDetailComponent } from './product-detail';
 import { ProductSuggestionComponent } from './product-suggestion';
+import {StarsModule} from '../shared/components/stars';
 
 @NgModule({
   imports: [
     CommonModule,
     FlexLayoutModule,
     RouterModule.forChild([
-      { path: '', component: ProductComponent }
+      {path: '', component: ProductComponent}
     ]),
     MatButtonModule,
-    MatGridListModule
+    MatGridListModule,
+    StarsModule
   ],
   declarations: [
     ProductComponent,

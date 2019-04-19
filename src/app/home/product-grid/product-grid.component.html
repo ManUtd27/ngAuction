@@ -16,6 +16,10 @@
       <div class="tile__title"
            ngClass.xs="tile__title--xs"
            ngClass.lg="tile__title--lg">{{ product.title }}</div>
+
+      <div class="info__description">
+        <nga-stars [rating]="product.rating"></nga-stars>
+      </div>
     </a>
   </mat-grid-tile>
 </mat-grid-list>

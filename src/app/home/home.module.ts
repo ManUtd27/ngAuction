@@ -8,6 +8,7 @@ import { MatTabsModule } from '@angular/material/tabs';
 import { CategoriesComponent } from './categories/categories.component';
 import { ProductGridComponent } from './product-grid/product-grid.component';
 import { SearchResultsComponent } from './search-results/search-results.component';
+import {StarsModule} from '../shared/components/stars';
 
 const routes: Route[] = [
   { path: '', pathMatch: 'full', redirectTo: 'categories' },
@@ -26,7 +27,8 @@ const routes: Route[] = [
     RouterModule.forChild(routes),
     FlexLayoutModule,
     MatGridListModule,
-    MatTabsModule
+    MatTabsModule,
+    StarsModule
   ],
   declarations: [
     CategoriesComponent,

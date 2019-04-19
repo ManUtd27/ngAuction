@@ -59,3 +59,10 @@
   font-size: mat-font-size($nga-typography, title);
   line-height: mat-line-height($nga-typography, title);
 }
+.info__description {
+  color: mat-color($nga-foreground, secondary-text);
+  font-size: mat-font-size($nga-typography, subheading-2);
+  font-weight: mat-font-weight($nga-typography, subheading-2);
+  line-height: mat-line-height($nga-typography, subheading-1);
+  padding-bottom: 24px;
+}
