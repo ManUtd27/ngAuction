@@ -16,7 +16,7 @@
     "featured" : true,
     "imageUrl" : "data/img/sunnies.png",
     "price" : 70,
-    "rating": 5,
+    "rating": 4,
     "title" : "Sunglasses",
     "categories": [
       "outdoor"
@@ -28,7 +28,7 @@
     "featured" : true,
     "imageUrl" : "data/img/clock.png",
     "price" : 120,
-    "rating": 5,
+    "rating": 3,
     "title" : "Clock",
     "categories": [
       "household"
@@ -40,7 +40,7 @@
     "featured" : true,
     "imageUrl" : "data/img/popsicle.png",
     "price" : 300,
-    "rating": 5,
+    "rating": 2,
     "title" : "Red Popsicle",
     "categories": [
       "outdoor"
@@ -52,7 +52,7 @@
     "featured" : true,
     "imageUrl" : "data/img/green-shoes.png",
     "price" : 75,
-    "rating": 5,
+    "rating": 1,
     "title" : "Green Slip-ons",
     "categories": [
       "household"
@@ -75,7 +75,7 @@
     "description" : "Who needs pants when you have shoes! Blue suede shoes were meant to go dancing in, so you may want to pick up a few of these. These things are stylish.",
     "imageUrl" : "data/img/chucks.png",
     "price" : 89,
-    "rating": 5,
+    "rating": 4,
     "title" : "Blue suede shoes",
     "categories": [
       "outdoor"
@@ -86,7 +86,7 @@
     "description" : "WeDipIt does it again. This handle dipped 4 inch brush is a perfect for painting 4 inch lines, or coloring in big areas with paint. Just be sure you don’t drop it in a bucket of red paint, then it won’t look dipped anymore.",
     "imageUrl" : "data/img/brush.png",
     "price" : 25,
-    "rating": 5,
+    "rating": 3,
     "title" : "Dipped Brush",
     "categories": [
       "outdoor"
@@ -97,7 +97,7 @@
     "description" : "The Perfect Bowl Co makes the best bowls for just about anything you can think of. This Perfect Goldfish Bowl holds water and fish perfectly. Looks great in living rooms. Keep out of reach from cats.",
     "imageUrl" : "data/img/fish_bowl.png",
     "price" : 25,
-    "rating": 5,
+    "rating": 2,
     "title" : "Perfect Goldfish Bowl",
     "categories": [
       "household"
@@ -108,7 +108,7 @@
     "description" : "Trying to find the perfect shade to match your mood? Try no longer. Red Lipstick Set by StickLips has you covered for those nights when you need to get out, or even if you’re just headed to work.",
     "imageUrl" : "data/img/lipstick.png",
     "price" : 25,
-    "rating": 5,
+    "rating": 1,
     "title" : "Red Lipstick Set",
     "categories": [
       "outdoor"
@@ -130,7 +130,7 @@
     "description" : "Half Shield is the right helmet for those warm summer days on the road. Dot approved, these helmets have been rigorously tested. Keep that noggin protected.",
     "imageUrl" : "data/img/helmet.png",
     "price" : 25,
-    "rating": 5,
+    "rating": 4,
     "title" : "Half Shield Helmet",
     "categories": [
       "outdoor"
@@ -141,7 +141,7 @@
     "description" : "Are you at a baseball game and feeling bored? At a pool party and looking for a laugh? Do you need something to take your anger out on? Beachball, by inflatable fun, is the perfect outlet.",
     "imageUrl" : "data/img/beachball.png",
     "price" : 25,
-    "rating": 5,
+    "rating": 3,
     "title" : "Beachball",
     "categories": [
       "outdoor"
@@ -152,7 +152,7 @@
     "description" : "These Binoculars by See Through are amazing and can make things that are really far away seem like they’re right in front of you. Bring them to the beach. Now you can buy the cheap seats at the big game and feel like you’re right in the action.",
     "imageUrl" : "data/img/binoculars.png",
     "price" : 25,
-    "rating": 5,
+    "rating": 2,
     "title" : "Old Binoculars",
     "categories": [
       "outdoor"
@@ -163,7 +163,7 @@
     "description" : "Flippers are a nice tool to have when you’re being chased by an oversized sea turtle. Never get caught again with these fast water shoes. You’re like a fish, but more graceful.",
     "imageUrl" : "data/img/flippers.png",
     "price" : 25,
-    "rating": 5,
+    "rating": 1,
     "title" : "Lime Flippers",
     "categories": [
       "outdoor"

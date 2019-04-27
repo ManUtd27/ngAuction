@@ -2,18 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="78027fbf-0c9d-4fb1-bef1-3f7972637582" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/src/app/product/stars/index.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/src/app/product/stars/stars.component.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/src/app/product/stars/stars.component.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/src/app/product/stars/stars.component.spec.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/src/app/product/stars/stars.component.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/client/src/app/product/product-detail/product-detail.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/app/product/product-detail/product-detail.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/app/product/product-detail/product-detail.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/app/product/product-detail/product-detail.component.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/client/src/app/product/product.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/app/product/product.module.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/app/product/stars/stars.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/app/product/stars/stars.component.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/client/src/app/shared/services/product.service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/app/shared/services/product.service.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/server/data/products.json" beforeDir="false" afterPath="$PROJECT_DIR$/server/data/products.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/src/db-auction.ts" beforeDir="false" afterPath="$PROJECT_DIR$/server/src/db-auction.ts" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -27,41 +21,21 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/client/src/app/product/stars/stars.component.ts">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="483">
-              <caret line="23" column="25" selection-start-line="23" selection-start-column="25" selection-end-line="23" selection-end-column="25" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/client/src/app/product/product-detail/product-detail.component.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="399">
-              <caret line="19" selection-start-line="19" selection-end-line="19" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/client/src/app/product/product-detail/product-detail.component.ts">
-          <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <folding>
-                <element signature="e#0#127#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="651">
+              <caret line="39" selection-start-line="39" selection-end-line="39" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/client/src/app/shared/services/product.service.ts">
+        <entry file="file://$PROJECT_DIR$/client/src/app/product/product-detail/product-detail.component.ts">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="210">
-              <caret line="10" column="17" lean-forward="true" selection-start-line="10" selection-start-column="17" selection-end-line="10" selection-end-column="17" />
+            <state relative-caret-position="216">
+              <caret line="33" column="31" selection-start-line="33" selection-end-line="34" />
               <folding>
-                <element signature="e#0#51#0" expanded="true" />
+                <element signature="e#0#127#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -86,10 +60,11 @@
         <option value="$PROJECT_DIR$/client/src/app/product/stars/index.ts" />
         <option value="$PROJECT_DIR$/client/src/app/product/product.module.ts" />
         <option value="$PROJECT_DIR$/server/src/db-auction.ts" />
-        <option value="$PROJECT_DIR$/client/src/app/product/stars/stars.component.ts" />
-        <option value="$PROJECT_DIR$/client/src/app/product/product-detail/product-detail.component.html" />
         <option value="$PROJECT_DIR$/server/data/products.json" />
         <option value="$PROJECT_DIR$/client/src/app/shared/services/product.service.ts" />
+        <option value="$PROJECT_DIR$/client/src/app/product/stars/stars.component.ts" />
+        <option value="$PROJECT_DIR$/client/src/app/product/product-detail/product-detail.component.html" />
+        <option value="$PROJECT_DIR$/client/src/app/product/product-detail/product-detail.component.ts" />
       </list>
     </option>
   </component>
@@ -136,6 +111,24 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="app" type="462c0819:PsiDirectoryNode" />
               <item name="product" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="auction" type="b2602c69:ProjectViewProjectNode" />
+              <item name="auction" type="462c0819:PsiDirectoryNode" />
+              <item name="client" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
+              <item name="product" type="462c0819:PsiDirectoryNode" />
+              <item name="product-detail" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="auction" type="b2602c69:ProjectViewProjectNode" />
+              <item name="auction" type="462c0819:PsiDirectoryNode" />
+              <item name="client" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
+              <item name="product" type="462c0819:PsiDirectoryNode" />
+              <item name="stars" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="auction" type="b2602c69:ProjectViewProjectNode" />
@@ -202,12 +195,20 @@
       <option name="presentableId" value="Default" />
       <updated>1556382273580</updated>
       <workItem from="1556382274750" duration="779000" />
-      <workItem from="1556383535825" duration="2360000" />
+      <workItem from="1556383535825" duration="4214000" />
     </task>
+    <task id="LOCAL-00001" summary="add rating back to project">
+      <created>1556386066076</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1556386066076</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="3139000" />
+    <option name="totallyTimeSpent" value="4993000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="2560" y="23" width="2560" height="1417" extended-state="6" />
@@ -230,9 +231,9 @@
       <window_info anchor="bottom" id="Console" order="7" />
       <window_info anchor="bottom" id="Docker" order="8" show_stripe_button="false" />
       <window_info anchor="bottom" id="Database Changes" order="9" />
-      <window_info anchor="bottom" id="Terminal" order="10" visible="true" weight="0.3697348" />
+      <window_info anchor="bottom" id="Terminal" order="10" visible="true" weight="0.28159127" />
       <window_info anchor="bottom" id="Event Log" order="11" side_tool="true" />
-      <window_info anchor="bottom" id="Version Control" order="12" />
+      <window_info anchor="bottom" id="Version Control" order="12" weight="0.3299532" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -241,6 +242,10 @@
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="add rating back to project" />
+    <option name="LAST_COMMIT_MESSAGE" value="add rating back to project" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/client/package.json">
@@ -322,31 +327,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/client/src/app/product/stars/stars.component.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="483">
-          <caret line="23" column="25" selection-start-line="23" selection-start-column="25" selection-end-line="23" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/server/package.json">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="441">
           <caret line="21" selection-start-line="21" selection-end-line="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/server/data/products.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1019">
-          <caret line="183" selection-start-line="183" selection-end-line="183" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/client/src/app/product/product-detail/product-detail.component.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="399">
-          <caret line="19" selection-start-line="19" selection-end-line="19" />
         </state>
       </provider>
     </entry>
@@ -371,21 +355,43 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/client/src/app/product/product-detail/product-detail.component.ts">
+    <entry file="file://$PROJECT_DIR$/server/data/products.json">
       <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <folding>
-            <element signature="e#0#127#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="1480">
+          <caret line="177" column="22" selection-start-line="177" selection-start-column="22" selection-end-line="177" selection-end-column="22" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/client/src/app/shared/services/product.service.ts">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="10" column="17" lean-forward="true" selection-start-line="10" selection-start-column="17" selection-end-line="10" selection-end-column="17" />
+        <state relative-caret-position="140">
+          <caret line="47" column="31" selection-start-line="47" selection-start-column="13" selection-end-line="47" selection-end-column="31" />
           <folding>
             <element signature="e#0#51#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/src/app/product/stars/stars.component.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="168">
+          <caret line="8" column="26" lean-forward="true" selection-start-line="8" selection-start-column="26" selection-end-line="8" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/src/app/product/product-detail/product-detail.component.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="651">
+          <caret line="39" selection-start-line="39" selection-end-line="39" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/src/app/product/product-detail/product-detail.component.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="216">
+          <caret line="33" column="31" selection-start-line="33" selection-end-line="34" />
+          <folding>
+            <element signature="e#0#127#0" expanded="true" />
           </folding>
         </state>
       </provider>
