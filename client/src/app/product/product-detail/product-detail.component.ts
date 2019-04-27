@@ -33,8 +33,8 @@ export class ProductDetailComponent implements OnInit, OnChanges {
   constructor(
     @Inject(API_BASE_URL) private readonly baseUrl: string,
     private readonly bidService: BidService,
-    // private productService: HttpProductService
-  ) {}
+  ) {
+  }
 
   ngOnInit() {
     this.latestBids$ = combineLatest(
@@ -42,7 +42,8 @@ export class ProductDetailComponent implements OnInit, OnChanges {
       this.bidService.priceUpdates$.pipe(startWith<BidMessage|null>(null)),
       (product, bid) =>  bid && bid.productId === product.id ? bid.price : product.price
     );
-
+    this.reviews = [new Review(0, this.product.id, new Date(), 'Shawn Williams',
+      5, 'Test Comment')];
   }
 
   ngOnChanges({ product }: { product: SimpleChange }) {
@@ -57,14 +58,12 @@ export class ProductDetailComponent implements OnInit, OnChanges {
     return `${this.baseUrl}/${product.imageUrl}`;
   }
 
-
   addReview() {
     const review = new Review(0, this.product.id, new Date(), 'Anonymous',
       this.newRating, this.newComment);
     console.log('Adding review ' + JSON.stringify(review));
-    this.reviews = [ review];
+    this.reviews = [ ...this.reviews, review ];
     this.product.rating = this.averageRating(this.reviews);
-
     this.resetForm();
   }
 
