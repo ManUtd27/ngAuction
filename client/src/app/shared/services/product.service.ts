@@ -21,6 +21,17 @@ export interface ProductSearchParams {
   maxPrice?: number;
 }
 
+export class Review {
+  constructor(
+    public id: number,
+    public productId: number,
+    public timestamp: Date,
+    public user: string,
+    public rating: number,
+    public comment: string) {
+  }
+}
+
 export abstract class ProductService {
   abstract getAll(): Observable<Product[]>;
   abstract getById(productId: number): Observable<Product>;

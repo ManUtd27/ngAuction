@@ -10,6 +10,7 @@ import { Observable, Subject, combineLatest } from 'rxjs';
 import { startWith} from 'rxjs/operators';
 import { API_BASE_URL } from '../../app.tokens';
 import {BidMessage, BidService, Product, } from '../../shared/services';
+import {Review} from '../../shared/services/product.service';
 
 @Component({
   selector: 'nga-product-detail',
@@ -23,6 +24,11 @@ export class ProductDetailComponent implements OnInit, OnChanges {
   @Input() product: Product;
 
   isReviewHidden = true;
+
+  reviews: Review[];
+  newRating: number;
+  newComment: string;
+
 
   constructor(
     @Inject(API_BASE_URL) private readonly baseUrl: string,
@@ -51,4 +57,26 @@ export class ProductDetailComponent implements OnInit, OnChanges {
     return `${this.baseUrl}/${product.imageUrl}`;
   }
 
+
+  addReview() {
+    const review = new Review(0, this.product.id, new Date(), 'Anonymous',
+      this.newRating, this.newComment);
+    console.log('Adding review ' + JSON.stringify(review));
+    this.reviews = [ review];
+    this.product.rating = this.averageRating(this.reviews);
+
+    this.resetForm();
+  }
+
+  averageRating(reviews: Review[]) {
+    const sum = reviews.reduce((average, review) => average + review.rating, 0);
+    return sum / reviews.length;
+  }
+
+
+  resetForm() {
+    this.newRating = 0;
+    this.newComment = '';
+    this.isReviewHidden = true;
+  }
 }
