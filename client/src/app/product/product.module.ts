@@ -8,6 +8,7 @@ import { MatGridListModule } from '@angular/material/grid-list';
 import { ProductComponent } from './product.component';
 import { ProductDetailComponent } from './product-detail';
 import { ProductSuggestionComponent } from './product-suggestion';
+import {StarsComponent} from './stars';
 
 @NgModule({
   imports: [
@@ -22,7 +23,8 @@ import { ProductSuggestionComponent } from './product-suggestion';
   declarations: [
     ProductComponent,
     ProductDetailComponent,
-    ProductSuggestionComponent
+    ProductSuggestionComponent,
+    StarsComponent
   ]
 })
 export class ProductModule {}

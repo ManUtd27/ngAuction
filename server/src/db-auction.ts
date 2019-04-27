@@ -10,6 +10,8 @@ export interface Product {
   categories: string[];
   imageUrl: string;
   price: number;
+  rating: number,
+
 }
 
 export interface ProductSearchParams {
