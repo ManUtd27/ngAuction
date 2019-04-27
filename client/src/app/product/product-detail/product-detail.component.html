@@ -35,9 +35,37 @@
               (click)="placeBid(price + 5)">
         PLACE BID {{ (price + 5) | currency:'USD':'symbol':'.0' }}
       </button>
+
+      <div class="well" id="reviews-anchor">
+        <div class="row">
+          <div class="col-md-12"></div>
+        </div>
+        <div  style="margin-top: 10px; " class="info__bid-button">
+          <button (click)="isReviewHidden = !isReviewHidden"
+                  mat-raised-button
+                  color="warn"
+          >Leave a Review</button>
+        </div>
+
+        <div [hidden]="isReviewHidden">
+          <div><nga-stars [(rating)]="newRating" [readonly]="false" class="large"></nga-stars></div>
+          <div><textarea [(ngModel)]="newComment"></textarea></div>
+          <div><button (click)="addReview()" mat-raised-button
+                       color="accent">Add review</button></div>
+        </div>
+
+        <div class="row" *ngFor="let review of reviews">
+          <hr>
+          <div class="col-md-12">
+            <nga-stars [rating]="review.rating"></nga-stars>
+            <span>{{ review.user }}</span>
+            <span class="pull-right">{{ review.timestamp | date: 'shortDate' }}</span>
+            <p>{{ review.comment }}</p>
+          </div>
+        </div>
+      </div>
+
     </div>
   </div>
-
-
 </div>
 

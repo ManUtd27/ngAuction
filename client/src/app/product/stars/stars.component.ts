@@ -6,8 +6,15 @@ import {Component, EventEmitter, Input, Output} from '@angular/core';
   styleUrls: ['./stars.component.css']
 })
 export class StarsComponent {
+  get stars(): boolean[] {
+    return this._stars;
+  }
+
+  set stars(value: boolean[]) {
+    this._stars = value;
+  }
   private _rating: number;
-  private stars: boolean[];
+  private _stars: boolean[];
 
   private maxStars = 5;
 
@@ -19,7 +26,7 @@ export class StarsComponent {
 
   set rating(value: number) {
     this._rating = value || 0;
-    this.stars = Array(this.maxStars).fill(true, 0, this.rating);
+    this._stars = Array(this.maxStars).fill(true, 0, this.rating);
   }
 
   @Output() ratingChange: EventEmitter<number> = new EventEmitter();
