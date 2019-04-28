@@ -68,6 +68,17 @@ export class HttpProductService implements ProductService {
   }
 }
 
+@Injectable({
+  providedIn: 'root',
+})
+export class ReviewService {
+  getReviewsForProduct(productId: number): Review[] {
+    return reviews
+      .filter(r => r.productId === productId)
+      .map(r => new Review(r.id, r.productId, new Date(r.timestamp), r.user, r.rating, r.comment));
+  }
+}
+
 @Injectable()
 export class _StaticProductService implements ProductService {
   constructor(private http: HttpClient) {}
@@ -119,3 +130,23 @@ export class _StaticProductService implements ProductService {
     });
   }
 }
+
+
+let reviews = [
+  {
+    "id": 0,
+    "productId": 1,
+    "timestamp": "2014-05-20T02:17:00+00:00",
+    "user": "User 1",
+    "rating": 5,
+    "comment": "Aenean vestibulum velit id placerat posuere. Praesent placerat mi ut massa tempor, sed rutrum metus rutrum. Fusce lacinia blandit ligula eu cursus. Proin in lobortis mi. Praesent pellentesque auctor dictum. Nunc volutpat id nibh quis malesuada. Curabitur tincidunt luctus leo, quis condimentum mi aliquet eu. Vivamus eros metus, convallis eget rutrum nec, ultrices quis mauris. Praesent non lectus nec dui venenatis pretium."
+  },
+  {
+    "id": 1,
+    "productId": 1,
+    "timestamp": "2014-05-20T02:53:00+00:00",
+    "user": "User 2",
+    "rating": 3,
+    "comment": "Aenean vestibulum velit id placerat posuere. Praesent placerat mi ut massa tempor, sed rutrum metus rutrum. Fusce lacinia blandit ligula eu cursus. Proin in lobortis mi. Praesent pellentesque auctor dictum. Nunc volutpat id nibh quis malesuada. Curabitur tincidunt luctus leo, quis condimentum mi aliquet eu. Vivamus eros metus, convallis eget rutrum nec, ultrices quis mauris. Praesent non lectus nec dui venenatis pretium."
+  },
+];

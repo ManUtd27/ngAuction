@@ -10,7 +10,8 @@ import { Observable, Subject, combineLatest } from 'rxjs';
 import { startWith} from 'rxjs/operators';
 import { API_BASE_URL } from '../../app.tokens';
 import {BidMessage, BidService, Product, } from '../../shared/services';
-import {Review} from '../../shared/services/product.service';
+import {Review, ReviewService} from '../../shared/services/product.service';
+import {ActivatedRoute} from '@angular/router';
 
 @Component({
   selector: 'nga-product-detail',
@@ -24,7 +25,7 @@ export class ProductDetailComponent implements OnInit, OnChanges {
   @Input() product: Product;
 
   isReviewHidden = true;
-
+  localID: number;
   reviews: Review[];
   newRating: number;
   newComment: string;
@@ -33,6 +34,8 @@ export class ProductDetailComponent implements OnInit, OnChanges {
   constructor(
     @Inject(API_BASE_URL) private readonly baseUrl: string,
     private readonly bidService: BidService,
+    private route: ActivatedRoute,
+    private reviewService: ReviewService
   ) {
   }
 
@@ -42,12 +45,15 @@ export class ProductDetailComponent implements OnInit, OnChanges {
       this.bidService.priceUpdates$.pipe(startWith<BidMessage|null>(null)),
       (product, bid) =>  bid && bid.productId === product.id ? bid.price : product.price
     );
-    this.reviews = [new Review(0, this.product.id, new Date(), 'Shawn Williams',
-      5, 'Test Comment')];
+    this.reviews = this.reviewService.getReviewsForProduct(this.product.id);
+    this.localID = +this.route.snapshot.params.productId;
+
   }
 
   ngOnChanges({ product }: { product: SimpleChange }) {
     this.productChange$.next(product.currentValue);
+    this.reviews = this.reviewService.getReviewsForProduct(this.product.id);
+    this.localID = +this.route.snapshot.params.productId;
   }
 
   placeBid(price: number) {
@@ -59,12 +65,15 @@ export class ProductDetailComponent implements OnInit, OnChanges {
   }
 
   addReview() {
-    const review = new Review(0, this.product.id, new Date(), 'Anonymous',
-      this.newRating, this.newComment);
-    console.log('Adding review ' + JSON.stringify(review));
-    this.reviews = [ ...this.reviews, review ];
-    this.product.rating = this.averageRating(this.reviews);
-    this.resetForm();
+    if (this.localID === this.product.id) {
+      const review = new Review(0, this.product.id, new Date(), 'Anonymous',
+        this.newRating, this.newComment);
+      console.log('Adding review ' + JSON.stringify(review));
+      this.reviews = [ ...this.reviews, review ];
+      this.product.rating = this.averageRating(this.reviews);
+      this.resetForm();
+    }
+
   }
 
   averageRating(reviews: Review[]) {

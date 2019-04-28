@@ -9,7 +9,7 @@ import { ProductComponent } from './product.component';
 import { ProductDetailComponent } from './product-detail';
 import { ProductSuggestionComponent } from './product-suggestion';
 import {StarsComponent} from './stars';
-import {FormsModule} from "@angular/forms";
+import {FormsModule} from '@angular/forms';
 
 @NgModule({
   imports: [
