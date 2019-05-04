@@ -22,4 +22,14 @@ describe('StarsComponent', () => {
   it('should create', () => {
     expect(component).toBeTruthy();
   });
+
+  it('is successfully injected', () => {
+    const component = TestBed.createComponent(StarsComponent).componentInstance;
+    expect(component instanceof StarsComponent).toEqual(true);
+  });
+
+  it('readonly property is true by default', () => {
+    let component = TestBed.createComponent(StarsComponent).componentInstance;
+    expect(component.readonly).toEqual(true);
+  });
 });
